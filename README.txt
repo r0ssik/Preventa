@@ -1,25 +1,108 @@
-Preventa - Full MVP (SQLite) - Como executar
+# 🛠️ Preventa - Full MVP (SQLite)
 
-Estrutura do pacote:
-- backend/: código C (src/) e banco SQLite (preventa.db)
-- frontend/: arquivos web (index.html, js/, css/)
+> 💡 Sistema de gerenciamento de manutenções preventivas desenvolvido em **C**, com interface **web (HTML, CSS, JS)** e banco de dados **SQLite**.
 
-Passos para rodar no Windows (XAMPP + MinGW):
+---
 
-1) Compile o backend:
-   - Abra CMD e vá para: C:\preventa_full_sqlite\backend
-   - Execute: mingw32-make
-   - Será criado: preventa_cgi.exe
-2) Copie o executável e o banco para o Apache CGI:
-   - copy preventa_cgi.exe C:\xampp\cgi-bin\
-   - copy preventa.db C:\xampp\cgi-bin\
-3) Coloque o frontend em htdocs:
-   - copy /E frontend C:\xampp\htdocs\preventa
-   - (ou copie manualmente a pasta 'frontend' para C:\xampp\htdocs\preventa)
-4) Reinicie o Apache no painel do XAMPP.
-5) Acesse: http://localhost/preventa/
-6) Teste as operações de CRUD em todos os módulos.
+## 🧩 Tecnologias Utilizadas
 
-Observações:
-- O Makefile está configurado para usar C:/sqlite/sqlite3.c durante a linkedição. Se você não tem sqlite3.c nesse caminho, instale o pacote "sqlite amalgamation" e ajuste o Makefile (CFLAGS/LDFLAGS).
+| Linguagem | Ícone |
+|------------|:------:|
+| **C** | ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white) |
+| **HTML** | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) |
+| **CSS** | ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) |
+| **JavaScript** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| **SQLite** | ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) |
 
+---
+
+## 🧠 Introdução e Objetivo
+
+O **Preventa** foi desenvolvido como projeto integrador, com o objetivo de criar um sistema **simples, intuitivo e eficiente** para o gerenciamento de manutenções preventivas em equipamentos industriais.  
+
+A aplicação visa:
+- Aumentar a **vida útil** dos equipamentos;  
+- Evitar **falhas inesperadas**;  
+- Garantir a **segurança operacional** das máquinas;  
+- Oferecer uma **solução acessível** para pequenas e médias indústrias.
+
+O sistema utiliza o conceito de **CRUD (Create, Read, Update, Delete)**, com um banco de dados relacional em **SQLite**, garantindo **integridade, agilidade** e **facilidade de manutenção**.
+
+---
+
+## 🧱 Estrutura do Projeto
+
+📦 preventa_full_sqlite
+├── backend/
+│ ├── src/ # Código-fonte em C
+│ ├── Makefile
+│ └── preventa.db # Banco de dados SQLite
+│
+├── frontend/
+│ ├── index.html # Interface principal
+│ ├── js/ # Scripts JavaScript
+│ └── css/ # Estilos CSS
+│
+└── README.md
+
+
+---
+
+## ⚙️ Como Executar no Windows (XAMPP + MinGW)
+
+### 1️⃣ Compile o backend:
+Abra o **Prompt de Comando (CMD)** e vá até o diretório do backend:
+```bash
+cd C:\preventa_full_sqlite\backend
+mingw32-make
+
+Será gerado o executável:
+
+preventa_cgi.exe
+
+2️⃣ Copie o executável e o banco de dados para o CGI do Apache:
+copy preventa_cgi.exe C:\xampp\cgi-bin\
+copy preventa.db C:\xampp\cgi-bin\
+
+3️⃣ Coloque o frontend no diretório htdocs:
+xcopy /E frontend C:\xampp\htdocs\preventa
+
+
+Ou copie manualmente a pasta frontend para:
+
+C:\xampp\htdocs\preventa
+
+4️⃣ Reinicie o Apache
+
+Abra o painel do XAMPP, pare e inicie novamente o módulo Apache.
+
+5️⃣ Acesse no navegador:
+
+👉 http://localhost/preventa/
+
+6️⃣ Teste as funcionalidades:
+
+Execute e teste todas as operações de CRUD nos módulos disponíveis.
+
+⚠️ Observações Importantes
+
+O Makefile está configurado para utilizar:
+
+C:/sqlite/sqlite3.c
+
+
+Caso esse caminho não exista, instale o SQLite Amalgamation e ajuste o Makefile nas variáveis CFLAGS e LDFLAGS.
+
+🔗 Links Importantes
+
+📂 Repositório: https://github.com/r0ssik/Preventa
+
+🎨 Protótipo no Figma: Clique aqui
+
+💻 Desenvolvido com dedicação por Gabriel Rodrigues Rossik e equipe
+🧡 “Prevenir é o melhor caminho para inovar.”
+
+
+---
+
+Deseja que eu adicione também **badges automáticas de build/status** (como GitHub Actions, license e versão) para d
