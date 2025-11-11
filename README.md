@@ -1,4 +1,4 @@
-# 🛠️ Preventa - Full MVP (SQLite)
+# 🛠️ Preventa - Full MVP (SQLite) -- Fase de Testes -- Existem Bugs
 
 > 💡 Sistema de gerenciamento de manutenções preventivas desenvolvido em **C**, com interface **web (HTML, CSS, JS)** e banco de dados **SQLite**.
 
