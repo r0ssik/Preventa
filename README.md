@@ -242,5 +242,5 @@ Com base em conceitos sólidos de engenharia de software e foco em usabilidade, 
 
 ---
 
-💻 Desenvolvido com dedicação por **Gabriel Rodrigues Rossik e equipe**  
-🧡 *“Prevenir é o melhor caminho para inovar.”*
+💻 Desenvolvido com dedicação por **Emily Modro, Gabriel Rossik, João Gabriel**  
+ *“Prevenir é o melhor caminho para inovar.”*
